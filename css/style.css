@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 75px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 1px 3px black;
+    border: 1px solid black;
+}
+
+.one {
+    background:  #f44336;
+}
+.two {
+    background: #FF9800;
+}
+.three {
+    background: #FFEB3B;
+}
+.four {
+    background:  #8BC34A;
+}
+.five {
+    background: #2196F3;
+}
+.six {
+    background: #9C27B0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@media only screen and (min-width: 600px) {
+    .container div {
+        width: 33.3%;
+    }
+}
